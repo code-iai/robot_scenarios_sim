@@ -1,0 +1,37 @@
+<launch>
+  <!-- couch -->
+  <param name="couch" textfile="$(find models_pkg)/models/living_room/couch.urdf"/>
+  <node name="spawn_couch" pkg="gazebo" type="spawn_model" args="-param couch -urdf -x -3 -y 0 -z 0.412037 -model couch_model" respawn="false" output="screen"/>
+  
+  <!-- tv table -->
+  <param name="tv_table" textfile="$(find models_pkg)/models/living_room/tv_table.urdf"/>
+  <node name="spawn_tv_table" pkg="gazebo" type="spawn_model" args="-param tv_table -urdf -x 3 -y 0 -z 0.259410  -model tv_table_model" respawn="false" output="screen"/>
+
+  <!-- tv -->
+  <param name="tv" textfile="$(find models_pkg)/models/living_room/tv.urdf"/>
+  <node name="spawn_tv" pkg="gazebo" type="spawn_model" args="-param tv -urdf -x 3 -y 0 -z 0.903405 -model tv_model" respawn="false" output="screen"/>
+
+  <!-- armchair -->
+  <param name="armchair" textfile="$(find models_pkg)/models/living_room/armchair.urdf"/>
+  <node name="spawn_armchair" pkg="gazebo" type="spawn_model" args="-param armchair -urdf -x -1.394956 -y 2.693690 -z 0.459650 -Y 25.351205 -model armchair" respawn="false" output="screen"/>
+
+  <!-- table -->
+  <param name="tbl" textfile="$(find models_pkg)/models/living_room/tbl.urdf"/>
+  <node name="spawn_tbl" pkg="gazebo" type="spawn_model" args="-param tbl -urdf -x 0 -y 0 -z 0.327740 -model tbl_model" respawn="false" output="screen"/>
+
+  <!-- newspaper -->
+  <param name="newspaper" textfile="$(find models_pkg)/models/living_room/newspaper.urdf"/>
+  <node name="spawn_newspaper" pkg="gazebo" type="spawn_model" args="-param newspaper -urdf -x 0 -y 0 -z 0.656 -model newspaper_model" respawn="false" output="screen"/>
+
+  <!-- tv table -->
+  <!-- <param name="tv_table" textfile="$(find models_pkg)/models/living_room/tv_table.urdf"/> -->
+  <!-- <node name="spawn_tv_table1" pkg="gazebo" type="spawn_model" args="-param tv_table -urdf -x 0 -y 0 -z 0  -model tv_table_model1" respawn="false" output="screen"/> -->
+
+  <!-- tv -->
+  <!-- <param name="bowl" textfile="$(find simul_pr2)/models/bowl.model"/>
+  <node name="spawn_bowl" pkg="gazebo" type="spawn_model" args="-gazebo -param bowl -x 0.65 -y 0 -z 1.00 -model bowl" respawn="false" output="screen"/> -->
+  
+  <!-- mug -->
+  <!--param name="mug" textfile="$(find simul_pr2)/models/mug.urdf"/>
+  <node name="spawn_mug" pkg="gazebo" type="spawn_model" args="-urdf -param mug -x 0.65 -y 0 -z 2.00 -R 0.0 -P 0.0 -Y -135.0 -model mug" respawn="false" output="screen"/ -->
+</launch>

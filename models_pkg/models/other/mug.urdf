@@ -1,0 +1,20 @@
+<robot name="mug">
+       <link name="body">
+       	     <visual>
+		<geometry>
+			<mesh filename="package://models_pkg/models/other/meshes/Dishes_Mug.dae" scale="1 1 1" />
+		</geometry>
+		<origin rpy="0 0 0" xyz="0 0 0" />
+	     </visual>
+       	     <collision>
+		<geometry>
+			<mesh filename="package://models_pkg/models/other/meshes/Dishes_Mug.dae" scale="1 1 1" />
+		</geometry>
+		<origin rpy="0 0 0" xyz="0 0 0" />
+	     </collision>
+	     <inertial>
+		<mass value="0.1"/>
+      		<inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="10.0" iyz="0.0" izz="1.0"/>
+	     </inertial>
+       </link>
+</robot>

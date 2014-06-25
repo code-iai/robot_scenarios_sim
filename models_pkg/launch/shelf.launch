@@ -1,0 +1,46 @@
+<launch>
+  <!-- shelf -->
+  <param name="shelf" textfile="$(find models_pkg)/models/shelf1/shelf.urdf"/>
+  <node name="spawn_shelf" pkg="gazebo" type="spawn_model" args="-param shelf -urdf -x 0 -y 0 -z 0 -model shelf_model" respawn="false" output="screen"/>
+  
+  <param name="mug" textfile="$(find models_pkg)/models/other/mug.urdf"/>
+  <node name="spawn_mug1" pkg="gazebo" type="spawn_model" args="-param mug -urdf -x -2.1 -y 0.2 -z 0.22978 -model mug1" respawn="false" output="screen"/>
+  <node name="spawn_mug2" pkg="gazebo" type="spawn_model" args="-param mug -urdf -x -2.1 -y 0.2 -z 0.379651 -model mug2" respawn="false" output="screen"/>
+  <node name="spawn_mug3" pkg="gazebo" type="spawn_model" args="-param mug -urdf -x -2.1 -y 0.2 -z 0.739812 -model mug3" respawn="false" output="screen"/>
+  <node name="spawn_mug4" pkg="gazebo" type="spawn_model" args="-param mug -urdf -x -2.1 -y 0.2 -z 1.092273 -model mug4" respawn="false" output="screen"/>
+
+
+  <param name="iron" textfile="$(find models_pkg)/models/other/iron_2.urdf"/>
+  <!-- <node name="spawn_iron1" pkg="gazebo" type="spawn_model" args="-param iron -urdf -x -2.1 -y -0.2 -z 0.33978 -model iron1" respawn="false" output="screen"/> -->
+  <!-- <node name="spawn_iron2" pkg="gazebo" type="spawn_model" args="-param iron -urdf -x -2.1 -y -0.2 -z 0.489651 -model iron2" respawn="false" output="screen"/> -->
+  <!-- <node name="spawn_iron3" pkg="gazebo" type="spawn_model" args="-param iron -urdf -x -2.1 -y -0.2 -z 0.849812 -model iron3" respawn="false" output="screen"/> -->
+  <!-- <node name="spawn_iron4" pkg="gazebo" type="spawn_model" args="-param iron -urdf -x -2.  1 -y -0.2 -z 1.902273 -model iron4" respawn="false" output="screen"/> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- coffee cup -->
+  <!-- <param name="coffee_cup" textfile="$(find gazebo_worlds)/objects/coffee_cup.model"/> -->
+  <!-- <node name="spawn_coffee_cup" pkg="gazebo" type="spawn_model" args="-gazebo -param coffee_cup -x 0.65 -y 0 -z 0.57 -model coffee_cup" respawn="false" output="screen"/> -->
+
+  <!-- coke can -->
+  <!-- <param name="coke_can" textfile="$(find gazebo_worlds)/objects/coke_can.urdf"/> -->
+  <!-- <node name="spawn_coke_can" pkg="gazebo" type="spawn_model" args="-urdf -param coffee_cup -x 0.65 -y 0 -z 0.57 -model coke_can_model" respawn="false" output="screen"/> -->
+
+  <!-- bowl -->
+  <!-- <param name="bowl" textfile="$(find simul_pr2)/models/bowl.model"/>
+  <node name="spawn_bowl" pkg="gazebo" type="spawn_model" args="-gazebo -param bowl -x 0.65 -y 0 -z 1.00 -model bowl" respawn="false" output="screen"/> -->
+  
+  <!-- mug -->
+  <!--param name="mug" textfile="$(find simul_pr2)/models/mug.urdf"/>
+  <node name="spawn_mug" pkg="gazebo" type="spawn_model" args="-urdf -param mug -x 0.65 -y 0 -z 2.00 -R 0.0 -P 0.0 -Y -135.0 -model mug" respawn="false" output="screen"/ -->
+</launch>

@@ -1,0 +1,23 @@
+<launch>
+  <!-- table -->
+  <param name="table_description" command="$(find xacro)/xacro.py $(find gazebo_worlds)/objects/table.urdf.xacro"/>
+  <node name="spawn_table" pkg="gazebo" type="spawn_model" args="-urdf -param table_description -x 0.5 -y 0 -z 0 -model table_model" respawn="false" output="screen"/>
+ 
+
+  <!-- cookingpot -->
+  <param name="Cookingpot_2" textfile="$(find simul_pr2)/models/Cookingpot_2.urdf"/>
+  <node name="spawn_Cookingpot" pkg="gazebo" type="spawn_model" args="-urdf -param Cookingpot_2 -x 1.15 -y -0.6 -z 1.00 -Y -2 -model Cookingpot_2" respawn="false" output="screen"/>
+
+  <!-- mug -->
+  <param name="mug" textfile="$(find simul_pr2)/models/mug.urdf"/>
+  <node name="spawn_mug" pkg="gazebo" type="spawn_model" args="-urdf -param mug -x 1.15 -y -0.2 -z 1.00 -Y 3.14 -model mug" respawn="false" output="screen"/>
+
+  <!-- iron -->
+  <param name="iron_2" textfile="$(find simul_pr2)/models/iron_2.urdf"/>
+  <node name="spawn_iron" pkg="gazebo" type="spawn_model" args="-urdf -param iron_2 -x 1.15 -y 0.2 -z 1.00 -Y 1.57 -model iron_2" respawn="false" output="screen"/>
+
+  <!-- Green_Bottle -->
+  <param name="Green_Bottle" textfile="$(find simul_pr2)/models/Green_Bottle.urdf"/>
+  <node name="spawn_GreenBottle" pkg="gazebo" type="spawn_model" args="-urdf -param Green_Bottle -x 1.15 -y 0.6 -z 1.00 -Y 1.57 -model Green_Bottle" respawn="false" output="screen"/>
+
+</launch>

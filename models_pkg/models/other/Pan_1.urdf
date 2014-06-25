@@ -1,0 +1,20 @@
+<robot name="Pan_1">
+       <link name="body">
+       	     <visual>
+		<geometry>
+			<mesh filename="package://modeltest/models/meshes/Pan_1.dae" scale="0.03 0.03 0.03" />
+		</geometry>
+		<origin rpy="0 0 0" xyz="0 0 0" />
+	     </visual>
+       	     <collision>
+		<geometry>
+			<mesh filename="package://modeltest/models/meshes/Pan_1.dae" scale="0.03 0.03 0.03" />
+		</geometry>
+		<origin rpy="0 0 0" xyz="0 0 0" />
+	     </collision>
+	     <inertial>
+		<mass value="10" />
+		<inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+	     </inertial>
+       </link>
+</robot>
