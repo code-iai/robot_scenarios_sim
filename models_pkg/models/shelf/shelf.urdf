@@ -2,8 +2,8 @@
   <link name="shelf">
     <inertial>
       <origin xyz="0 0 0" /> 
-      <mass value="1.0" />
-      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="100.0"  iyz="0.0"  izz="1.0" />
+      <mass value="100.0" />
+      <inertia  ixx="100.0" ixy="0.0"  ixz="0.0"  iyy="100.0"  iyz="0.0"  izz="100.0" />
     </inertial>
     <visual>
       <origin xyz="0 0 0" /> 
