@@ -14,7 +14,7 @@
 	     </collision>
 	     <inertial>
 		<mass value="0.1"/>
-      		<inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+      		<inertia ixx="100.0" ixy="0.0" ixz="0.0" iyy="100.0" iyz="0.0" izz="100.0"/>
 	     </inertial>
        </link>
 </robot>
