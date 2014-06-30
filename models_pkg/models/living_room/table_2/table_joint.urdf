@@ -1,0 +1,44 @@
+<robot name="table_model">
+  <link name="body">
+    <inertial>
+      <mass value="10.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="1.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://models_pkg/models/living_room/table_2/body.dae" scale="1 1 1"/>
+      </geometry> 
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://models_pkg/models/living_room/table_2/body.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+  </link> 
+
+<link name="drawer">
+    <inertial>
+      <mass value="1.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="1.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://models_pkg/models/living_room/table_2/drawer.dae" scale="1 1 1"/>
+      </geometry> 
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://models_pkg/models/living_room/table_2/drawer.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+  </link> 
+
+ <joint name="joint" type="prismatic">
+    <parent link="body"/>
+    <child link="drawer"/>
+    <limit effort="1000.0" lower="-0.25" upper="0" velocity="10"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="1 0 0">
+  </joint>
+
+</robot>
